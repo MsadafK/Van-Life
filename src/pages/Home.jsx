@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="home-container">
       <img
-        src="../../public/images/mountains.png"
+        src="public\images\mountains.png"
         alt="mountains image with light greish shade"
         className="home-img"
       />
