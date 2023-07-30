@@ -29,6 +29,7 @@ export default function Vans() {
                     {item.type}
                   </a>
                 </div>
+                <h1>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h1>
                 <p>
                   ${item.price}
                   <br />
