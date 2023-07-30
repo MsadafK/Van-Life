@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff7ed;
+  font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h3 {
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  margin: 1em;
+  color: #4d4d4d;
+}
+
+.header-nav-links,
+a:hover {
+  font-weight: bold;
+  color: #161616;
+  text-decoration: underline;
+}
+
+.home-link-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 0.75rem 1.375rem;
+  color: initial;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.home-link-button:hover {
+  transform: translate(1px, 1px);
+}
+
+/* -------------HOME PAGE ------------------ */
+
+.home-container {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 42px;
+}
+
+.home-container p {
+  line-height: 24px;
+}
+
+.inside-home-container {
+  position: absolute;
+  width: 30rem;
+}
+
+.inside-home-container a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  background-color: #ff8c38;
+  border: none;
+  width: 100%;
+  margin-top: 27px;
+  padding: 0.75em;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  font-weight: bold;
+}
+
+.home-container a:hover {
+  transform: translate(1px, 1px);
+}
+
+/* -------------ABOUT PAGE----------------- */
+
+.about-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.first-about-container {
+  margin: 3em 2em;
+}
+
+.first-about-container h1 {
+  line-height: 38px;
+}
+
+.first-about-container p {
+  line-height: 22px;
+}
+
+.second-about-container {
+  background: #ffcc8d;
+  border-radius: 0.5rem;
+  padding: 2em;
+  padding-bottom: 4em;
+  margin-top: 2.5em;
+}
+
+.second-about-container h2 {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.second-about-container a {
+  text-decoration: none;
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  border-radius: 0.5rem;
+  margin-left: 0;
+}
+
+/* ----------------Vans Page------------------ */
+
+.vans-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.vans-container h1 {
+  margin-bottom: 1.2em;
+}
+
+.filter-option {
+  text-decoration: none;
+  background: #ffead0;
+  color: #4d4d4d;
+  padding: 1em 2em;
+  margin-left: 0;
+  border-radius: 5px;
+}
+
+.clear {
+  background: none;
+  text-decoration: underline;
+}
+
+.card-container {
+  margin: 5em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.van-img {
+  border-radius: 10px;
+}
+
+.card-container a {
+  margin-left: 0;
+  color: #000;
+  text-decoration: none;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.per-day {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.NamePrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.type {
+  padding: 0.5em 1em;
+  color: #ffead0;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.card-container .type {
+  color: #ffead0;
+}
+
+.simple {
+  background: #e17654;
+}
+
+.rugged {
+  background: #115e59;
+}
+
+.luxury {
+  background: #161616;
+}
+
+.van-img {
+  width: 100%;
+}
+
+/* ---------------------VANS DETAIL PAGE------------------------------------------------ */
+
+.vans-details-first-link {
+  color: #201f1d;
+  font-weight: 500;
+  margin-left: 1em;
+  line-height: 4;
+  text-decoration: none;
+}
+
+.vansDetail-container {
+  padding: 1em;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.vansDetail-container img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 2.5em 0;
+}
+
+.vansDetail-container p {
+  line-height: 1.5;
+  color: #161616;
+  weight: 500;
+}
+
+.van-details-price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.per-day {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.rent-this-van {
+  background: #ff8c38;
+  text-decoration: none;
+  color: #fff;
+  padding: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 5em;
+}
+
+/* ------------FOOTER---------------- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #252525;
+  color: #aaaaaa;
+}
+
+/* -----------------HOSTVAN PAGE------------------------------------------------ */
+
+.hostVan-container {
+}
+
+.listed-vans {
+  width: 50%;
+  border-radius: 5px;
+  margin: 0 auto;
+  background: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 1em auto;
+}
+
+.listed-vans img {
+  width: 40%;
+  border-radius: 5px;
+}
