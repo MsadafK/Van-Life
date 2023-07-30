@@ -20,7 +20,6 @@ import Layout from "./components/Layout";
 import "./server";
 
 function App() {
-  console.log("suck my dick");
   return (
     <BrowserRouter>
       <Routes>
