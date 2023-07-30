@@ -17,7 +17,7 @@ export default function HostVanDetail() {
       .then((data) => setVan(data.vans));
   }, []);
 
-  const x =
+  const details =
     van &&
     van.map((item) => {
       return (
@@ -32,6 +32,32 @@ export default function HostVanDetail() {
               <p>${item.price}/day</p>
             </div>
           </div>
+          <div>
+            <nav>
+              <NavLink
+                to="."
+                style={({ isActive }) => (isActive ? activeStyle : null)}
+                end
+              >
+                Details
+              </NavLink>
+              <NavLink
+                to="pricing"
+                style={({ isActive }) => (isActive ? activeStyle : null)}
+                end
+              >
+                Pricing
+              </NavLink>
+              <NavLink
+                to="photos"
+                style={({ isActive }) => (isActive ? activeStyle : null)}
+                end
+              >
+                Photos
+              </NavLink>
+            </nav>
+            <Outlet context={{ van }} />
+          </div>
         </div>
       );
     });
@@ -42,29 +68,7 @@ export default function HostVanDetail() {
       <Link to=".." relative="path">
         ⬅ Back to all vans
       </Link>
-      {x}
-      <NavLink
-        to="."
-        style={({ isActive }) => (isActive ? activeStyle : null)}
-        end
-      >
-        Details
-      </NavLink>
-      <NavLink
-        to="pricing"
-        style={({ isActive }) => (isActive ? activeStyle : null)}
-        end
-      >
-        Pricing
-      </NavLink>
-      <NavLink
-        to="photos"
-        style={({ isActive }) => (isActive ? activeStyle : null)}
-        end
-      >
-        Photos
-      </NavLink>
-      <Outlet />
+      {details}
     </div>
   );
 }

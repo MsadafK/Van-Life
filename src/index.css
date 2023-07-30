@@ -294,14 +294,17 @@ footer {
 
 /* -----------------HOSTVAN PAGE------------------------------------------------ */
 
-.hostVan-container {
-}
-
-.listed-vans {
+.hostVans-container {
+  border: 1px solid red;
   width: 50%;
   border-radius: 5px;
   margin: 0 auto;
   background: white;
+}
+
+.listed-vans {
+  border-radius: 5px;
+  margin: 0 auto;
   padding: 1em;
   display: flex;
   align-items: center;
