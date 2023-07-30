@@ -38,6 +38,7 @@ export default function HostVanDetail() {
 
   return (
     <div>
+      <h1>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h1>
       <br />
       <Link to=".." relative="path">
         ⬅ Back to all vans
