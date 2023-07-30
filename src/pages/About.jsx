@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <div className="about-container">
-      <img src="../../public/images/van.png" className="about-img" />
+      <img src="public/images/van.png" className="about-img" />
       <div className="first-about-container">
         <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
         <p>
