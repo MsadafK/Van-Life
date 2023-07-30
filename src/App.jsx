@@ -9,8 +9,8 @@ import VanDetail from "./pages/VanDetail";
 import Dashboard from "./pages/Host/Dashboard";
 import Income from "./pages/Host/Income";
 import HostVans from "./pages/Host/HostVans";
-import HostVanDetail from "./pages/Host/HostVanDetail";
 import Reviews from "./pages/Host/Reviews";
+import HostVanDetail from "./pages/Host/HostVanDetail";
 import Details from "./pages/Host/Details";
 import Pricing from "./pages/Host/Pricing";
 import Photos from "./pages/Host/Photos.jsx";
@@ -20,6 +20,7 @@ import Layout from "./components/Layout";
 import "./server";
 
 function App() {
+  console.log("suck my dick");
   return (
     <BrowserRouter>
       <Routes>
@@ -28,17 +29,17 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="vans" element={<Vans />} />
           <Route path="vans/:id" element={<VanDetail />} />
-
           <Route path="host" element={<HostLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="income" element={<Income />} />
             <Route path="hostvans" element={<HostVans />} />
+            <Route path="reviews" element={<Reviews />} />
+
             <Route path="hostvans/:id" element={<HostVanDetail />}>
               <Route index element={<Details />} />
               <Route path="pricing" element={<Pricing />} />
               <Route path="photos" element={<Photos />} />
               <Route />
-              <Route path="reviews" element={<Reviews />} />
             </Route>
           </Route>
         </Route>
